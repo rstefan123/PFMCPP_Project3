@@ -111,7 +111,7 @@ struct BassRepair
 /*
  3)
  */
- struct keyboardRepair
+ struct keyboardRepair FIXME Capitalization
  {
      struct Keyboard
      {
@@ -127,7 +127,7 @@ struct BassRepair
 /*
  4)
  */
-struct speakerRepair
+struct speakerRepair FIXME Capitalization
 {
     struct Speaker
     {
@@ -143,7 +143,7 @@ struct speakerRepair
 /*
  5)
  */
-struct pedalRepair
+struct pedalRepair FIXME Capitalization
 {
     struct Pedal
     {
@@ -180,7 +180,7 @@ struct DIbuild
 /*
  7) ONLY UDTs
  */
-struct junkyard
+struct junkyard FIXME Capitalization
 {
     struct Vehicle;
     void Demolish(Vehicle Car1);
@@ -190,7 +190,7 @@ struct junkyard
 /*
  8)
  */
-struct workFromHome
+struct workFromHome FIXME Capitalization
 {
     bool officeSpaceSetUp = true;
     int computerMonitors = 3;
@@ -204,7 +204,7 @@ struct workFromHome
 /*
  9)
  */
-struct repairPreamp
+struct repairPreamp FIXME Capitalization
 {
     struct Preamp
     {
