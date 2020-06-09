@@ -68,7 +68,7 @@ struct CarWash
 /*
  1)
  */
-struct guitarRepair
+struct GuitarRepair
 {
     struct Guitar  //nested class
     {
@@ -85,22 +85,22 @@ struct guitarRepair
 /*
  2)
  */
-struct bassRepair
+struct BassRepair
 {
     struct Bass
     {
-        struct strings
+        struct Strings
         {
             bool stringsOld = false;
-            void changeStrings(strings Strings);
+            void changeStrings(Strings strings1);
         };
-        struct electronics
+        struct Electronics
         {
             bool happyWithElectronics = false;
         };
     };
 
-    struct wiringDiagram
+    struct WiringDiagram
     {
         bool newPickups = true;
         int s1Switches = 3;
@@ -164,8 +164,8 @@ struct DIbuild
 {
     struct Transformer
     {
-        double ratio = 12;
-        double ratedImpedance = 10000;
+        int ratio = 12;
+        int ratedImpedance = 10000;
         bool centerTapped = false;
     };
     struct Jacks
@@ -210,9 +210,9 @@ struct repairPreamp
     {
         bool potsOkay = true;
         bool electronicsOkay = false;
-        double THD = 10;
+        int THD = 10;
         bool clipping = true;
-        double noiseFloor = 50;
+        int noiseFloor = 50;
     };
 
     void repairElectronics(Preamp preamp);
@@ -222,14 +222,14 @@ struct repairPreamp
 /*
  10)
  */
-struct mixSong
+struct MixSong
 {
     struct Song
     {
-        double drumLevel = 2;
-        double bassLevel = 10;
-        double guitarLevel = 5;
-        double voxLevel = 1;
+        int drumLevel = 2;
+        int bassLevel = 10;
+        int guitarLevel = 5;
+        int voxLevel = 1;
     };
     void turnUpDrums(Song MySong);
     void turnDownBass(Song MySong);
